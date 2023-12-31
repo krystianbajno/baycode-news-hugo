@@ -1,8 +1,7 @@
 rm -rf content/articles
 git clone https://github.com/krystianbajno/articles.git content/articles
 
-if [ -e "content/articles/README.md" ]; then
-    rm content/articles/README.MD
+if [ -e "content/articles/.gitignore" ]; then
     rm content/articles/.gitignore
 fi
 
@@ -17,6 +16,8 @@ for dir in content/articles/*/; do
 
         rm "$dir_name/README.md"
         rm "$dir_name/frontmatter.toml"
+
+        cat "$dir_name/index.md" | head -c 128
     fi
 
     if [ -e "$dir_name/src" ]; then
