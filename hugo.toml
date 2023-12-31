@@ -1,5 +1,6 @@
 languageCode = 'en-us'
 theme = "news"
+timeout = "200s"
 
 [permalinks]
 articles = ":slug"
@@ -9,4 +10,3 @@ favicon = '/favicon.jpg'
 
 [markup.goldmark.renderer]
 unsafe = true
-
