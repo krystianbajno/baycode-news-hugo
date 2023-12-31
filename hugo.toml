@@ -1,6 +1,7 @@
 languageCode = 'en-us'
 theme = "news"
 timeout = "200s"
+enableRobotsTXT = true
 
 [permalinks]
 articles = ":slug"
