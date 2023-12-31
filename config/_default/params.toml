@@ -40,13 +40,13 @@ limit = 50
 type = "toc"
 
 [opengraph.twitter]
-site = ""
+site = "https://twitter.com/krystianbajno"
 card = "summary_large_image"
 
 [defaultImage.opengraph]
-enabled = false
-local = false
-src = ""
+enabled = true
+local = true
+src = "logo.png"
 
 [colorScheme]
 toggle = true
