@@ -1,6 +1,6 @@
 baseurl = "https://blog.baycode.eu"
 languageCode = "en-us"
-paginate = 25
-title = "Baycode News"
 defaultContentLanguage = "en"
+paginate = 25
 hasCJKLanguage = false
+title = "Baycode News - blog articles, news"

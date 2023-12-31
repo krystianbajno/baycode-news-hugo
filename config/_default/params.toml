@@ -13,7 +13,7 @@ math = false
 readingTime = true
 
 [sidebar]
-subtitle = "Blog, articles, news"
+subtitle = "Navigating the Digital Realm"
 
 [[widgets.homepage]]
 type = "search"

@@ -1,5 +1,4 @@
 [en]
 languageName = "English"
-languagedirection = "ltr"
-title = "Baycode News"
+languageDirection = "ltr"
 weight = 1
