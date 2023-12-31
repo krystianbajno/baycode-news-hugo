@@ -11,13 +11,13 @@ for dir in content/articles/*/; do
     if [ -e "$dir_name/README.md" ]; then
         echo "+++" >> "$dir_name/index.md"
         cat "$dir_name/frontmatter.toml" >> "$dir_name/index.md"
-        echo "\n+++\n" >> "$dir_name/index.md"
+        echo -e "\n+++\n" >> "$dir_name/index.md"
         cat "$dir_name/README.md" >> "$dir_name/index.md"
 
         rm "$dir_name/README.md"
         rm "$dir_name/frontmatter.toml"
 
-        cat "$dir_name/index.md" | head -c 128
+        cat "$dir_name/index.md" | head -c 420
     fi
 
     if [ -e "$dir_name/src" ]; then
