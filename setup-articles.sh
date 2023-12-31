@@ -5,6 +5,10 @@ if [ -e "content/articles/.gitignore" ]; then
     rm content/articles/.gitignore
 fi
 
+if [ -e "content/articles/README.md" ]; then
+    rm content/articles/README.md
+fi
+
 for dir in content/articles/*/; do
     dir_name="${dir%/}"
 
