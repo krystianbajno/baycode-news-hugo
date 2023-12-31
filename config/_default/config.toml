@@ -1,4 +1,4 @@
-baseurl = "https://blog.baycode.eu"
+baseurl = "https://news.baycode.eu"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 paginate = 25
