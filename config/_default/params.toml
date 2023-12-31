@@ -1,5 +1,5 @@
 mainSections = ["post", "articles"]
-rssFullContent = true
+rssFullContent = false
 
 [dateFormat]
 published = "Jan 02, 2006"

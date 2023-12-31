@@ -1,10 +1,3 @@
-/*!
-*   Hugo Theme Stack
-*
-*   @author: Jimmy Cai
-*   @website: https://jimmycai.com
-*   @link: https://github.com/CaiJimmy/hugo-theme-stack
-*/
 import StackGallery from "ts/gallery";
 import { getColor } from 'ts/color';
 import menu from 'ts/menu';
@@ -15,9 +8,6 @@ import { setupSmoothAnchors } from "ts/smoothAnchors";
 
 let Stack = {
     init: () => {
-        /**
-         * Bind menu event
-         */
         menu();
 
         const articleContent = document.querySelector('.article-content') as HTMLElement;
@@ -27,9 +17,6 @@ let Stack = {
             setupScrollspy();
         }
 
-        /**
-         * Add linear gradient background to tile style article
-         */
         const articleTile = document.querySelector('.article-list--tile');
         if (articleTile) {
             let observer = new IntersectionObserver(async (entries, observer) => {
