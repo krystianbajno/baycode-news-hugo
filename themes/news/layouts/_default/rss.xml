@@ -40,8 +40,7 @@
                 {{- $image := partial "helper/image" (dict "Context" . "Type" "rss") -}}
                 {{- if $image.exists -}}
                     {{ "<" | html }}img src="{{ $image.permalink | absURL }}" alt="Featured image of post {{ .Title }}" {{ "/>" | html}}
-                {{- end -}} {{ $content }}
-            </description>
+                {{- end -}}{{ $content }}</description>
         </item>
         {{ end }}
     </channel>

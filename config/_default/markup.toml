@@ -2,9 +2,9 @@
 unsafe = true
 
 [tableOfContents]
-endLevel = 4
-ordered = true
-startLevel = 2
+endLevel = 3
+ordered = false
+startLevel = 1
 
 [highlight]
 noClasses = false
@@ -13,4 +13,4 @@ guessSyntax = true
 lineNoStart = 1
 lineNos = true
 lineNumbersInTable = true
-tabWidth = 4
+tabWidth = 2
