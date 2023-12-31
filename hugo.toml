@@ -1,0 +1,12 @@
+languageCode = 'en-us'
+theme = "news"
+
+[permalinks]
+posts = ":title"
+
+[params]
+favicon = '/favicon.jpg'
+
+[markup.goldmark.renderer]
+unsafe = true
+

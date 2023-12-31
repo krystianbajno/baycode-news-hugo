@@ -1,0 +1,6 @@
+baseurl = "https://blog.baycode.eu"
+languageCode = "en-us"
+paginate = 25
+title = "Baycode News"
+defaultContentLanguage = "en"
+hasCJKLanguage = false

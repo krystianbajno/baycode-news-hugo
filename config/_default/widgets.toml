@@ -1,0 +1,20 @@
+[[widgets.homepage]]
+type = "archives"
+
+[widgets.homepage.params]
+limit = 99999
+
+[[widgets.homepage]]
+type = "categories"
+
+[widgets.homepage.params]
+limit = 50
+
+[[widgets.homepage]]
+type = "tag-cloud"
+
+[widgets.homepage.params]
+limit = 20
+
+[[widgets.page]]
+type = "toc"

@@ -1,0 +1,22 @@
+# Generated files by hugo
+public
+resources
+content/articles
+/public/
+/resources/
+/assets/jsconfig.json
+hugo_stats.json
+/content/articles/
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
+
+.DS_Store
+node_modules
+dist
+tmp

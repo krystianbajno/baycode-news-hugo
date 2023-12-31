@@ -1,0 +1,39 @@
+[[main]]
+identifier = "baycode"
+name = "Visit _baycode.eu"
+url = "https://baycode.eu"
+
+[[main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 100
+
+[main.params]
+icon = "home"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/krystianbajno"
+weight=100
+
+[social.params]
+icon = "linkedin"
+
+[[social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/krystianbajno"
+
+[social.params]
+icon = "brand-github"
+
+[[social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/krystianbajno"
+
+[social.params]
+icon = "brand-twitter"
+

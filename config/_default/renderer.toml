@@ -1,0 +1,5 @@
+[imageProcessing.cover]
+enabled = true
+
+[imageProcessing.content]
+enabled = true
