@@ -9,11 +9,11 @@
 
 {{- if $image -}}
 	{{- $notSVG := ne (path.Ext .Destination) ".svg" -}}
-	{{- $isGIF := eq (path.Ext .Destination) ".gif" -}}
+	{{- $notGIF := ne (path.Ext .Destination) ".gif" -}}
 
 	{{- $Permalink = $image.RelPermalink -}}
 
-	{{- if $notSVG }}
+	{{- if and $notSVG $notGIF }}
 		{{- $Width = $image.Width -}}
 		{{- $Height = $image.Height -}}
 		{{- $galleryImage = true -}}
@@ -21,11 +21,6 @@
 		{{- if (default true .Page.Site.Params.imageProcessing.content.enabled) -}}
 			{{- $small := $image.Resize `webp 720x Lanczos` -}}
 			{{- $big := $image.Resize `webp 1440x Lanczos` -}}
-
-			{{- if $isGIF -}}
-				{{- $small = $image.Resize `720x Lanczos` -}}
-				{{- $big = $image.Resize `1440x Lanczos` -}}
-			{{- end -}}
 			
 			{{- $Srcset = printf `%s 720w, %s 1440w` $small.RelPermalink $big.RelPermalink -}}
 		{{- end -}}
