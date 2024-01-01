@@ -10,8 +10,8 @@
                     {{- $Srcset := "" -}}
                     
                     {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
-                        {{- $thumbnail := $image.resource.Resize "800x" -}}
-                        {{- $thumbnailRetina := $image.resource.Resize "1600x" -}}
+                        {{- $thumbnail := $image.resource.Resize "webp 800x Lanczos" -}}
+                        {{- $thumbnailRetina := $image.resource.Resize "webp 1600x Lanczos" -}}
                         {{- $Srcset = printf "%s 800w, %s 1600w" $thumbnail.RelPermalink $thumbnailRetina.RelPermalink -}}
                         {{- $Permalink = $thumbnail.RelPermalink -}}
                         {{- $Width = $thumbnail.Width -}}
