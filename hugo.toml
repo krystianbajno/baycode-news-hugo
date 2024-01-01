@@ -1,6 +1,6 @@
 languageCode = 'en-us'
 theme = "news"
-timeout = "200s"
+timeout = "300s"
 enableRobotsTXT = true
 
 [permalinks]
