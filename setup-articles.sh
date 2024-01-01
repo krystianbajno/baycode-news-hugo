@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf content/articles
 git clone https://github.com/krystianbajno/articles.git content/articles
 
