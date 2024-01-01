@@ -5,22 +5,29 @@
 {{- $Height := 0 -}}
 {{- $Srcset := "" -}}
 
-{{/* SVG and external images won't work with gallery layout, because their width and height attributes are unknown */}}
 {{- $galleryImage := false -}}
 
 {{- if $image -}}
 	{{- $notSVG := ne (path.Ext .Destination) ".svg" -}}
+	{{- $isGIF := eq (path.Ext .Destination) ".gif" -}}
+
 	{{- $Permalink = $image.RelPermalink -}}
 
-	{{- if $notSVG -}}
+	{{- if $notSVG }}
 		{{- $Width = $image.Width -}}
 		{{- $Height = $image.Height -}}
 		{{- $galleryImage = true -}}
 
 		{{- if (default true .Page.Site.Params.imageProcessing.content.enabled) -}}
-			{{- $small := $image.Resize `480x` -}}
-			{{- $big := $image.Resize `1024x` -}}
-			{{- $Srcset = printf `%s 480w, %s 1024w` $small.RelPermalink $big.RelPermalink -}}
+			{{- $small := $image.Resize `webp 720x Lanczos` -}}
+			{{- $big := $image.Resize `webp 1440x Lanczos` -}}
+
+			{{- if $isGIF -}}
+				{{- $small = $image.Resize `720x Lanczos` -}}
+				{{- $big = $image.Resize `1440x Lanczos` -}}
+			{{- end -}}
+			
+			{{- $Srcset = printf `%s 720w, %s 1440w` $small.RelPermalink $big.RelPermalink -}}
 		{{- end -}}
 	{{- end -}}
 {{- end -}}
